@@ -48,7 +48,12 @@
 		}
 
 		&.style3 {
-			background-color: _palette(accent3);
+   	  background-color: _palette(bg);
+      color: _palette(fg-dark) !important;
+
+      h2, h3 {
+          color: _palette(fg-dark);
+      }
 		}
 
 		&.style3-alt {

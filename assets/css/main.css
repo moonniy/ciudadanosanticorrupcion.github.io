@@ -1324,10 +1324,10 @@ h1 {
     position: relative;
     padding-bottom: 0.35em; }
     h1.major:after {
-      background-image: -moz-linear-gradient(to right, #0B0B3B, #b74e91);
-      background-image: -webkit-linear-gradient(to right, #0B0B3B, #b74e91);
-      background-image: -ms-linear-gradient(to right, #0B0B3B, #b74e91);
-      background-image: linear-gradient(to right, #0B0B3B, #b74e91);
+      background-image: -moz-linear-gradient(to right, #0B0B3B, #FAFAFA);
+      background-image: -webkit-linear-gradient(to right, #0B0B3B, #FAFAFA);
+      background-image: -ms-linear-gradient(to right, #0B0B3B, #FAFAFA);
+      background-image: linear-gradient(to right, #0B0B3B, #FAFAFA);
       -moz-transition: max-width 0.2s ease;
       -webkit-transition: max-width 0.2s ease;
       -ms-transition: max-width 0.2s ease;
@@ -1906,7 +1906,7 @@ input[type="radio"] {
   input[type="radio"]:checked + label:before {
     background: #09092e;
     border-color: #09092e;
-    color: #b74e91;
+    color: #FAFAFA;
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
@@ -1974,7 +1974,7 @@ input[type="radio"] + label:before {
       .wrapper.style2-alt .icon.major:before {
         color: #3e4094; }
       .wrapper.style3 .icon.major:before {
-        color: #b74e91; }
+        color: #FAFAFA; }
       .wrapper.style3-alt .icon.major:before {
         color: #953d75; }
 
@@ -2399,7 +2399,10 @@ table {
   .wrapper.style2-alt {
     background-color: #3e4094; }
   .wrapper.style3 {
-    background-color: #b74e91; }
+    background-color: #FAFAFA;
+    color: #0B0B3B !important; }
+    .wrapper.style3 h2, .wrapper.style3 h3 {
+      color: #0B0B3B; }
   .wrapper.style3-alt {
     background-color: #953d75; }
   .wrapper.fullscreen {
@@ -2748,10 +2751,10 @@ table {
     #sidebar nav a:before {
       background: white; }
     #sidebar nav a:after {
-      background-image: -moz-linear-gradient(to right, #0B0B3B, #b74e91);
-      background-image: -webkit-linear-gradient(to right, #0B0B3B, #b74e91);
-      background-image: -ms-linear-gradient(to right, #0B0B3B, #b74e91);
-      background-image: linear-gradient(to right, #0B0B3B, #b74e91);
+      background-image: -moz-linear-gradient(to right, #0B0B3B, #FAFAFA);
+      background-image: -webkit-linear-gradient(to right, #0B0B3B, #FAFAFA);
+      background-image: -ms-linear-gradient(to right, #0B0B3B, #FAFAFA);
+      background-image: linear-gradient(to right, #0B0B3B, #FAFAFA);
       -moz-transition: max-width 0.2s ease;
       -webkit-transition: max-width 0.2s ease;
       -ms-transition: max-width 0.2s ease;
@@ -2815,7 +2818,7 @@ table {
           padding: 0; }
           #sidebar nav a:after {
             background-image: none;
-            background-color: #b74e91; } }
+            background-color: #FAFAFA; } }
   @media screen and (max-width: 736px) {
     #sidebar {
       display: none; } }
