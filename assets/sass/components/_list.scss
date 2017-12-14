@@ -39,6 +39,16 @@
 				}
 			}
 		}
+    &.info {
+        list-style-type: none;
+        padding-left: 0;
+
+        .contact {
+            margin-left: 1em;
+            text-decoration:none;
+            border-bottom: none;
+        }
+    }
 
 		&.icons {
 			cursor: default;
@@ -70,7 +80,6 @@
 			padding-left: 0;
 
 			li {
-				display: inline-block;
 				padding: 0 (_size(element-margin) * 0.5) 0 0;
 				vertical-align: middle;
 
