@@ -2069,7 +2069,8 @@ ul {
     padding-left: 0; }
     ul.actions li {
       padding: 0 1em 0 0;
-      vertical-align: middle; }
+      vertical-align: middle;
+      display: inline-block; }
       ul.actions li:last-child {
         padding-right: 0; }
     ul.actions.small li {
