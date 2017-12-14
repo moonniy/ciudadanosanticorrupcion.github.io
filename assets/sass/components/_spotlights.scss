@@ -61,15 +61,15 @@
 				}
 			}
 
-			&:nth-child(1) {
+			&:nth-child(odd) {
+          background-color: _palette(accent1);
 			}
 
-			&:nth-child(2) {
-				background-color: rgba(0,0,0,0.05);
-			}
+			&:nth-child(even) {
+				  background-color: _palette(bg);
 
-			&:nth-child(3) {
-				background-color: rgba(0,0,0,0.1);
+          color: _palette(fg-bold)
+
 			}
 
 			&.inactive,
