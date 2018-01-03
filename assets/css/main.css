@@ -1443,6 +1443,19 @@ hr {
     border-radius: 0;
     padding: 0; }
 
+.announcement {
+  background-color: #FF5722;
+  width: 100%;
+  padding: 15px 20px; }
+  .announcement .message {
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+    color: white; }
+    .announcement .message a {
+      font-weight: bold; }
+
 /* Button */
 input[type="submit"],
 input[type="reset"],
@@ -1533,8 +1546,8 @@ button,
   input[type="button"].special,
   button.special,
   .button.special {
-    background-color: #09092e;
-    color: #FAFAFA !important; }
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #09092e !important; }
     input[type="submit"].special:after,
     input[type="reset"].special:after,
     input[type="button"].special:after,
@@ -1973,7 +1986,7 @@ input[type="radio"] + label:before {
       .wrapper.style1-alt .icon.major:before {
         color: #222; }
       .wrapper.style2 .icon.major:before {
-        color: #5052b5; }
+        color: #FF5722; }
       .wrapper.style2-alt .icon.major:before {
         color: #3e4094; }
       .wrapper.style3 .icon.major:before {
@@ -2400,7 +2413,7 @@ table {
   .wrapper.style1-alt {
     background-color: #222; }
   .wrapper.style2 {
-    background-color: #5052b5; }
+    background-color: #FF5722; }
   .wrapper.style2-alt {
     background-color: #3e4094; }
   .wrapper.style3 {

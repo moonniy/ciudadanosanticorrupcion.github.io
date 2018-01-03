@@ -74,8 +74,8 @@
 		}
 
 		&.special {
-			background-color: _palette(fg-bold);
-			color: _palette(bg) !important;
+			background-color: _palette(fg-light);
+			color: _palette(fg-bold) !important;
 
 			&:after {
 				display: none;
