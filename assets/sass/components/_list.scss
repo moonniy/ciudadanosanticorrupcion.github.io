@@ -80,7 +80,7 @@
 			padding-left: 0;
 
 			li {
-				padding: 0 (_size(element-margin) * 0.5) 0 0;
+				padding: (_size(element-margin) * 0.5) (_size(element-margin) * 0.5) 0 0;
 				vertical-align: middle;
         display: inline-block;
 
