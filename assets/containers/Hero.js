@@ -13,10 +13,11 @@ class Hero extends React.Component{
 
 let styles = {
   Hero: {
-    backgroundColor: '#102542',
-    margin: 0,
+    background: 'linear-gradient(rgba(16, 37, 66, 0.90), rgba(16, 37, 66, 0.90)), url(https://i0.wp.com/www.sergerente.net/wp-content/uploads/2009/07/reunion-de-trabajo.jpg?resize=1280%2C640) no-repeat',
+    backgroundSize: '100%',
+    margin: '0',
     overflow: 'hidden',
-    height: '700px'
+    height: '675px'
   }
 }
 
