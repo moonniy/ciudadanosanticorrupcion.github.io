@@ -35,7 +35,7 @@ let IntroductionStyle ={
     wordWrap: 'break-word'
   },
   subtext: {
-    fontSize: '2em',
+    fontSize: '1.5em',
     fontWeight: 'normal',
     marginTop: '1em',
     marginBottom: '1em',
