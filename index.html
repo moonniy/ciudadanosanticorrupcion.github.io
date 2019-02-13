@@ -13,6 +13,13 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 
 		<link rel="stylesheet" href="assets/css/main.css?date=01-13-18" />
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 60%;  /* The width is the width of the web page */
+        }
+    </style>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -72,7 +79,7 @@ Esperamos que esta página sirva para establecer un medio de comunicación efect
 										  <li>
                           <i class="fa fa-twitter" aria-hidden="true"><a class="contact" href="https://twitter.com/catyoro">catyoro</a></i></li>
 										  <li>
-                          <i class="fa fa-envelope"><a class="contact" href="mailto:catyoro@hotmail.com" >participacionciudadana2030@gmail.com</a></i></li>
+                          <i class="fa fa-envelope"><a class="contact" href="mailto:presidencia@seapuebla.org.mx" >presidencia@seapuebla.org.mx</a></i></li>
 									</ul>
                   <ul class="actions">
                       <li><a href="cv/CV_Catalina_Aguilar.pdf" class="button">Conoce mi curriculum</a></li>
@@ -90,7 +97,7 @@ Esperamos que esta página sirva para establecer un medio de comunicación efect
 										  <li>
                           <i class="fa fa-twitter"><a class="contact" href="https://twitter.com/davaSEAP">davaSEAP</a></i></li>
 										          <li>
-                                  <i class="fa fa-envelope"><a class="contact" href="mailto:danielvaldesseap@gmail.com">danielvaldesseap@gmail.com</a></i></li>
+                                  <i class="fa fa-envelope"><a class="contact" href="mailto:daniel.valdes@seapuebla.org.mx">daniel.valdes@seapuebla.org.mx</a></i></li>
 									</ul>
                   <ul class="actions">
                       <li><a href="cv/CV_Daniel_Valdes.pdf" class="button special">Conoce mi curriculum</a></li>
@@ -108,7 +115,7 @@ Esperamos que esta página sirva para establecer un medio de comunicación efect
 										  <li>
                           <i class="fa fa-twitter" aria-hidden="true"><a href="https://twitter.com/caratransparenc" class="contact">caratransparenc</a></i></li>
 										  <li>
-                          <i class="fa fa-envelope" aria-hidden="true"><a href="mailto:caratransparencia@gmail.com" class="contact">caratransparencia@gmail.com</a></i></li>
+                          <i class="fa fa-envelope" aria-hidden="true"><a href="mailto:carmen.leyva@seapuebla.org.mx" class="contact">carmen.leyva@seapuebla.org.mx</a></i></li>
 									</ul>
                   <ul class="actions">
                       <li><a href="cv/CV_Carmen_Leyva.pdf" class="button">Conoce mi curriculum</a>
@@ -126,7 +133,7 @@ Esperamos que esta página sirva para establecer un medio de comunicación efect
 									<h2 class="special">Francisco Javier Mariscal Magdaleno</h2>
 									<ul class="info">
 										  <li><i class="fa fa-twitter" aria-hidden="true"><a href="https://twitter.com/pancho_mariscal" class="contact">pancho_mariscal</a></i></li>
-										  <li><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:fjmariscal001@gmail.com" class="contact">fjmariscal001@gmail.com</a></i></li>
+										  <li><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:francisco.mariscal@seapuebla.org.mx" class="contact">francisco.mariscal@seapuebla.org.mx</a></i></li>
 									</ul>
                   <ul class="actions">
                       <li><a href="cv/CV_Francisco_Mariscal.pdf" class="button special">Conoce mi curriculum</a></li>
@@ -142,7 +149,7 @@ Esperamos que esta página sirva para establecer un medio de comunicación efect
 									<h2>José Alejandro Guillén Reyes</h2>
 									<ul class="info">
 									    <li><i class="fa fa-twitter" aria-hidden="true"><a href="https://twitter.com/aleguillenr" class="contact">@aleguillenr</a></i></li>
-									    <li><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:alejandroguillenmex@gmail.com" class="contact">alejandroguillenmex@gmail.com</a></i></li>
+									    <li><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:alejandro.guillen@seapuebla.org.mx" class="contact">alejandro.guillen@seapuebla.org.mx</a></i></li>
 									</ul>
                   <ul class="actions">
                       <li><a href="cv/CV_Alejandro_Guillen.pdf" class="button">Conoce mi curriculum</a></li>
@@ -217,6 +224,14 @@ declaración de intereses de servidores públicos.</p>
 						  <div class="inner">
 
              </div>
+          </section>
+
+          <section id="lugar" class="wrapper style3 spotlight">
+              <div class="inner">
+                  <h2>Ubicación</h2>
+                  <p>Puedes encontrarnos en las ofician del <i><a style="font-style: italic; font-weight: bold" href="https://seapuebla.org.mx/"></i>Sistema Estatal Anticorrupción</a> en <strong>4 poniente 719, colonia Centro, bajo previa cita.</strong></p>
+                  <div id="map"></div>
+              </div>
           </section>
 					<section id="convocatoria" class="wrapper style3 spotlight">
 
@@ -316,6 +331,24 @@ declaración de intereses de servidores públicos.</p>
 
   gtag('config', 'UA-111248172-1');
       </script>
+      <script>
+      function initMap() {
+        var sea = {lat: 19.049150, lng: -98.203503};
+        var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 18, center: sea});
+        var marker = new google.maps.Marker({position: sea, map: map});
+           var contentString = '<h2 style="color: 333">Sistema Estatal Anticorrupción</h2><p>Calle 4 Poniente 719, C.P. 72090<br>Colonia, Centro Histórico</p>'
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
 
+          marker.addListener('click', function() {
+          infowindow.open(map, marker);
+          });
+      }
+      </script>
+      <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM3giD__Sn1Wy_K672AtNJUtd3NosQ1aQ&callback=initMap">
+          </script>
 	</body>
 </html>
