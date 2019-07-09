@@ -120,24 +120,31 @@ let people = [{
 class Contacts extends React.Component{
   render(){
     return(
-      <div style={fondo.contacts}>
+      <div style={fondo.principal}>
       <h2 style={fondo.title}>¿Quienes lo conforman?</h2>
-      { people.map((obj, step) => <Contact key={step} {...obj}> </Contact>) }
+	<div style={fondo.contacts}>
+	  {people.map((obj, step) => <Contact key={step} {...obj}> </Contact>)}
+	</div>
       </div>
     );
   }
 }
 
 let fondo = {
-    contacts: {
-      backgroundColor: '#102542',
+    principal:{
+      backgroundColor: '#fff',
       margin: 0,
-      overflow: 'hidden',
-      paddingTop: '4em'
+      paddingTop: '4em',
+      paddingBottom: '4em'
+    },
+    contacts: {
+      display: 'flex',
+      flexFlow: 'row wrap'
     },
     title : {
       marginBottom: '1em',
-      marginLeft: '2.2em'
+      marginLeft: '2.2em',
+      color: '#102530'
     }
 }
 

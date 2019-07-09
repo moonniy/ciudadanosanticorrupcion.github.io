@@ -6,22 +6,27 @@ class Contact extends React.Component{
   render(){
     return(
       <div style={styles.contact}>
-          <div>
+	<div>
+          <div style={styles.imgContent}>
             <img style={styles.image} src={this.props.imagen}/>
           </div>
           <div>
             <div style={styles.info}>
             <h3 style={styles.font}>{this.props.name}</h3>
             <h4 style={styles.font}>{this.props.puesto}</h4>
-            <h4 style={styles.font}>{this.props.slogan}</h4>
+            <p style={styles.fontslogan}>{this.props.slogan}</p>
             </div>
+            <ul style={styles.list}>
+              <Social url={this.props.social.mail.url} arg="fa fa-envelope">{this.props.social.mail.name}</Social>
+            </ul>
             <ul style={styles.list}>
               <Social url={this.props.social.fb.url} arg="fa fa-facebook">{this.props.social.fb.name}</Social>
               <Social url={this.props.social.tw.url} arg="fa fa-twitter">{this.props.social.tw.name}</Social>
-              <Social url={this.props.social.mail.url} arg="fa fa-envelope">{this.props.social.mail.name}</Social>
-              <Social url={this.props.social.cv.url}>Currículum</Social>
+
+
             </ul>
           </div>
+	</div>
       </div>
     );
   }
@@ -29,28 +34,44 @@ class Contact extends React.Component{
 
 let styles = {
   contact: {
-    backgroundColor: '#102542',
-    margin: 0,
-    overflow: 'hidden',
-    display: 'flex'
+    backgroundColor: '#102530',
+    marginTop: '2%',
+    marginLeft: '2%',
+    padding: '1em',
+    overflow: 'visible',
+    width: '47%',   
+    height:'775px', 
+    padding: '30px 40px 20px 40px',
+    borderRadius: '30px'
   },
   info: {
     marginLeft: '3em',
-    marginRight: '3em'
+    marginRight: '3em',
+    textAlign: 'center'
   },
   font: {
-    fontWeight: 'normal'
+    fontWeight: 'normal',
+    marginTop:'1em'
+  },  
+  fontslogan: {
+    fontWeight: 'normal',
+    FontSize:'15px',
+    marginTop:'1em',
+    textAlign: 'justify',
+    marginBottom: '1.5em'
   },
   image: {
-    height: '23em',
-    width: '25em',
-    verticalAlign: 'middle'
+    height: '18em',
+    width: '15em'
+  },
+  imgContent: {
+    textAlign: 'center'
   },
   list: {
-    margin: '0 4em 0 4em',
-    padding: '2em',
+    margin: '0',
+    padding: '0',
     display: 'flex',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     listStyle: 'none'
   },
   text: {
@@ -59,7 +80,7 @@ let styles = {
     borderBottom: 'none'
   },
   line: {
-    marginTop: '1rem',
+    marginTop: '0',
     marginBottom: '1rem',
     paddingRight: '1.5em'
   }
