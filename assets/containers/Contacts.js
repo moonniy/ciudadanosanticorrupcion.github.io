@@ -2,7 +2,7 @@
 
 let people = [{
   name: "Catalina Aguilar Oropeza",
-  puesto: "Administrador",
+  puesto: "Comisionada",
   imagen: "images/Catalina_Aguilar.jpg",
   slogan: "Lollipop chupa chups bonbon I love soufflé. Cheesecake carrot cake bear claw. Bonbon cotton candy marshmallow fruitcake soufflé tiramisu cotton candy chocolate cake lemon drops. Cake bonbon donut gummies. Icing sweet roll tart I love. Biscuit pastry I love I love pie gummies I love. Croissant danish halvah gummies jelly.",
   social: {
@@ -25,7 +25,7 @@ let people = [{
 },
 {
   name: "Daniel Alejandro Valdés Amaro",
-  puesto: "Coordinador",
+  puesto: "Comisionado",
   imagen: "images/Daniel_Valdes.jpg",
   slogan: "Lollipop chupa chups bonbon I love soufflé. Cheesecake carrot cake bear claw. Bonbon cotton candy marshmallow fruitcake soufflé tiramisu cotton candy chocolate cake lemon drops. Cake bonbon donut gummies. Icing sweet roll tart I love. Biscuit pastry I love I love pie gummies I love. Croissant danish halvah gummies jelly.",
   social: {
@@ -48,7 +48,7 @@ let people = [{
 },
 {  
   name: "María del Carmen Leyva Báthory",
-  puesto: "Administrador",
+  puesto: "Comisionada",
   imagen: "images/Carmen_Leyva.jpg",
   slogan: "Lollipop chupa chups bonbon I love soufflé. Cheesecake carrot cake bear claw. Bonbon cotton candy marshmallow fruitcake soufflé tiramisu cotton candy chocolate cake lemon drops. Cake bonbon donut gummies. Icing sweet roll tart I love. Biscuit pastry I love I love pie gummies I love. Croissant danish halvah gummies jelly.",
   social: {
@@ -71,7 +71,7 @@ let people = [{
 },
 {  
   name: "Francisco Javier Mariscal Magdaleno",
-  puesto: "Administrador",
+  puesto: "Comisionado",
   imagen: "https://image.freepik.com/foto-gratis/moderna-oficina-persona-trabajador-cara_1157-3666.jpg",
   slogan: "Lollipop chupa chups bonbon I love soufflé. Cheesecake carrot cake bear claw. Bonbon cotton candy marshmallow fruitcake soufflé tiramisu cotton candy chocolate cake lemon drops. Cake bonbon donut gummies. Icing sweet roll tart I love. Biscuit pastry I love I love pie gummies I love. Croissant danish halvah gummies jelly.",
   social: {
@@ -94,7 +94,7 @@ let people = [{
 },
 {  
   name: "José Alejandro Guillén Reyes",
-  puesto: "Administrador",
+  puesto: "Comisionado",
   imagen: "images/Alejandro_Guillen.jpg",
   slogan: "Lollipop chupa chups bonbon I love soufflé. Cheesecake carrot cake bear claw. Bonbon cotton candy marshmallow fruitcake soufflé tiramisu cotton candy chocolate cake lemon drops. Cake bonbon donut gummies. Icing sweet roll tart I love. Biscuit pastry I love I love pie gummies I love. Croissant danish halvah gummies jelly.",
   social: {

@@ -5,23 +5,30 @@ let Link = (props) => <li style={NavigationStyle.line}><a style={NavigationStyle
 class Navigation extends React.Component{
   render(){
     return(
-					<nav style={NavigationStyle.top}>
-						<ul style={NavigationStyle.menu}>
-							<Link url="#bienvenida">Bienvenida</Link>
-							<Link url="#conocenos">Quiénes somos</Link>
-							<Link url="#labor">Qué hacemos</Link>
-							<Link url="#convocatoria">Archivo</Link>
-						</ul>
-					</nav>
+	<nav className="main" style={NavigationStyle.top}>
+	    <img style={NavigationStyle.image} src="https://es.freelogodesign.org/Content/img/logo-ex-7.png"/>
+	    <ul style={NavigationStyle.menu}>
+
+			<Link url="#Nosotros">Nosotros</Link>
+			<Link url="#Acciones">Acciones</Link>
+			<Link url="#Transparencia">Trasparencia</Link>
+			<Link url="#Participa">Participa</Link>
+			<Link url="#Contacto">Contacto</Link>
+		</ul>
+	</nav>
     );
   }
 }
 
 let NavigationStyle = {
+  image:{
+    width:'100px'
+  },
   text: {
     color: "#fff",
     display: 'block',
-    borderBottom: 'none'
+    borderBottom: 'none',
+    letterSpacing: '1px'
   },
   line: {
     marginLeft: '1.5625rem',
@@ -32,10 +39,12 @@ let NavigationStyle = {
     padding: '0',
     display: 'flex',
     justifyContent: 'flex-end',
-    listStyle: 'none'
+    listStyle: 'none',
+    alignItems: 'center'
   },
   top: {
-    marginTop: '2em',
-    marginBottom: '1.25em'
+      margin: '1.25em 2em 2em',
+      display: 'flex',
+      justifyContent: 'space-between'
   }
 }

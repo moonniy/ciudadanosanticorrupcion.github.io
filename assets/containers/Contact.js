@@ -14,6 +14,7 @@ class Contact extends React.Component{
             <div style={styles.info}>
             <h3 style={styles.font}>{this.props.name}</h3>
             <h4 style={styles.font}>{this.props.puesto}</h4>
+	    <a style={styles.boton} href={this.props.social.cv.url}>Curriculum</a>
             <p style={styles.fontslogan}>{this.props.slogan}</p>
             </div>
             <ul style={styles.list}>
@@ -50,6 +51,7 @@ let styles = {
     textAlign: 'center'
   },
   font: {
+    color: '#fff',
     fontWeight: 'normal',
     marginTop:'1em'
   },  
@@ -83,5 +85,9 @@ let styles = {
     marginTop: '0',
     marginBottom: '1rem',
     paddingRight: '1.5em'
+  },
+  boton:{
+    borderBottom: 'none',
+    color: '#fff'
   }
 }
