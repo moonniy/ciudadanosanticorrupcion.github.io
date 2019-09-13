@@ -15,7 +15,7 @@
 		margin: 0 0 _size(element-margin) 0;
 
 		section {
-			@include padding(3em, 3em, (0.5em, 0, 0, 4em));
+			@include padding(1em, 3em, (0.5em, 0, 0, 4em));
 			width: 50%;
 			border-top: solid 1px _palette(border);
 			position: relative;
@@ -37,7 +37,7 @@
 				@include vendor('transform', 'scale(1)');
 				position: absolute;
 				left: 3em;
-				top: 3em;
+				top: 1.5em;
 				opacity: 1;
 			}
 
