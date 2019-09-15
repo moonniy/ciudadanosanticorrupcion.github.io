@@ -1,0 +1,52 @@
+.hero {
+    background: linear-gradient(rgba(28, 89, 155, 0.9), rgba(36, 84, 139, 0.9), rgba(28, 89, 155, 0.9)), url('https://i0.wp.com/www.sergerente.net/wp-content/uploads/2009/07/reunion-de-trabajo.jpg?resize=1280%2C640') no-repeat;
+    background-size: 100%;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+
+    .content {
+        margin-top: 20vh;
+        text-align: center;
+        width: 70%;
+        border: 1px;
+        margin-right: auto;
+        margin-left: auto;
+
+        .title {
+            margin: 0;
+            line-height: 1.2;
+            word-wrap: break-word;
+            font-weight: bold;
+            font-size: 3.3em;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .slogan {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            line-height: 1.2;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .main.action {
+
+            border-radius: 0;
+            height: 50px;
+            line-height: 0;
+            font-size: 0.8em;
+            margin-top: 20px;
+            padding: 1em 3.7em;
+            border-color: rgba(255, 255, 255, 0.15);
+            color: rgba(255, 255, 255, 0.85);
+            font-weight:  bold;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 2em;
+        }
+    }
+}

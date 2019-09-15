@@ -40,11 +40,12 @@
 		}
 
 		&.style2 {
-			background-color: _palette(accent2);
+			  background-color: _palette(accent2);
+        color: _palette(accent3) !important;
 		}
 
 		&.style2-alt {
-			background-color: _palette(accent2-alt);
+			  background-color: _palette(accent2-alt);
 		}
 
 		&.style3 {
@@ -52,7 +53,7 @@
       color: _palette(fg-dark) !important;
 
       h2, h3 {
-          color: _palette(fg-dark);
+          color: _palette(fg-bold);
       }
 		}
 
