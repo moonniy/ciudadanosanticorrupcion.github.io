@@ -25,14 +25,14 @@
 				$body.addClass('is-ie');
 
 		// Disable animations/transitions until the page has loaded.
-			if (skel.canUse('transition'))
-				$body.addClass('is-loading');
+		//	if (skel.canUse('transition'))
+		//		$body.addClass('is-loading');
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+		//	$window.on('load', function() {
+		//		window.setTimeout(function() {
+		//			$body.removeClass('is-loading');
+		//		}, 100);
+		//	});
 
 		// Forms.
 
@@ -86,9 +86,12 @@
 					.each(function() {
 
 						var	$this = $(this),
-							id = $this.attr('href'),
-							$section = $(id);
-
+							  id = $this.attr('href');
+                //if (!/^[\d\w]*$/.test(id))
+                //    return;
+              
+							var $section = $(id.replace(/\/#?/gi, '#'));
+              console.log($section)
 						// No section for this link? Bail.
 							if ($section.length < 1)
 								return;

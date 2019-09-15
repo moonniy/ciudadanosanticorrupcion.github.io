@@ -25,9 +25,6 @@
 			@include vendor('flex-direction', 'column');
 			@include vendor('justify-content', 'center');
 			@include vendor('transform', 'translateY(0)');
-			@include vendor('transition', (
-				'opacity #{_duration(activation)} ease',
-			));
 			min-height: 100%;
 			opacity: 1;
 			width: 100%;
@@ -44,10 +41,6 @@
 
 				> li {
 					@include vendor('transform', 'translateY(0)');
-					@include vendor('transition', (
-						'opacity #{_duration(activation) * 0.15} ease',
-						'transform #{_duration(activation) * 0.75} ease'
-					));
 					margin: 1.5em 0 0 0;
 					opacity: 1;
 					padding: 0;
@@ -57,16 +50,11 @@
 						margin: 0;
 					}
 
-					@for $i from 1 through _misc(max-sidebar-links) {
-						&:nth-child(#{$i}) {
-							@include vendor('transition-delay', '#{(_duration(activation) * 0.2 * $i) + (_duration(activation) * 0.25)}');
-						}
-					}
+					
 				}
 			}
 
 			a {
-				@include vendor('transition', 'color #{_duration(transition)} ease');
 				border: 0;
 				color: _palette(fg-dark);
 				display: block;
@@ -97,12 +85,11 @@
 
 				&:after {
 					@include vendor('background-image', 'linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
-					@include vendor('transition', 'max-width #{_duration(transition)} ease');
 					max-width: 0;
 				}
 
 				&:hover {
-					color: _palette(fg);
+					  color: _palette(accent1);
 				}
 
 				&.active {
@@ -123,7 +110,7 @@
 			nav {
 				ul {
 					li {
-						@include vendor('transform', 'translateY(2em)');
+						// @include vendor('transform', 'translateY(2em)');
 						opacity: 0;
 					}
 				}
