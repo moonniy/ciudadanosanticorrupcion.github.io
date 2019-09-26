@@ -2795,4 +2795,83 @@ table {
     #intro {
       background-attachment: scroll; } }
 
+.microsite nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #f10d71;
+  display: flex;
+  flex-direction: row-reverse;
+  background: #FAFAFA;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  z-index: 10; }
+  @media screen and (max-width: 736px) {
+    .microsite nav {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(241, 13, 113, 0.15); } }
+.microsite .flat-hero {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (max-width: 736px) {
+    .microsite .flat-hero {
+      border-bottom: 2px solid rgba(241, 13, 113, 0.15);
+      margin-top: 25px; } }
+  .microsite .flat-hero .title {
+    color: #f10d71;
+    text-align: center; }
+  .microsite .flat-hero .subtitle {
+    color: rgba(241, 13, 113, 0.8);
+    text-align: center;
+    font-size: 1.5em; }
+    @media screen and (max-width: 736px) {
+      .microsite .flat-hero .subtitle {
+        font-size: 1.2em; } }
+  .microsite .flat-hero .figure {
+    width: 30%;
+    margin-bottom: 3em;
+    margin-top: 3em; }
+    @media screen and (max-width: 736px) {
+      .microsite .flat-hero .figure {
+        width: 70%;
+        margin-bottom: 0.8em;
+        margin-top: 0.8em; } }
+  .microsite .flat-hero .cta {
+    background-color: #f10d71;
+    color: #FAFAFA !important;
+    margin-bottom: 5em;
+    font-size: 1em; }
+    @media screen and (max-width: 736px) {
+      .microsite .flat-hero .cta {
+        margin-bottom: 2em;
+        font-size: .8em; } }
+.microsite .segment .title {
+  width: 80%;
+  background-color: #454547;
+  padding: 0.4em 0.4em .4em 1em; }
+  .microsite .segment .title--right {
+    width: 80%;
+    background-color: #454547;
+    padding: 0.4em 0.4em .4em 1em;
+    margin-left: 20%; }
+    @media screen and (max-width: 736px) {
+      .microsite .segment .title--right {
+        width: 100%;
+        margin: 0; } }
+  @media screen and (max-width: 736px) {
+    .microsite .segment .title {
+      width: 100%;
+      padding: 0.4em 0.4em .4em 1em; } }
+.microsite .segment .infographic {
+  width: 60%;
+  margin-bottom: 3em;
+  margin-top: 3em; }
+  @media screen and (max-width: 736px) {
+    .microsite .segment .infographic {
+      width: 100%; } }
+
 /*# sourceMappingURL=main.css.map */
