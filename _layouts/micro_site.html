@@ -45,7 +45,7 @@
 	  </head>
 	  <body>
 
-        <div id="wrapper">
+        <div id="wrapper" class="microsite">
             {{content}}
         </div>
         
@@ -77,38 +77,18 @@
 			  <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
 			  <script src="/assets/js/main.js"></script>
         <script src="/assets/js/lightslider.min.js"></script>
-        <script>
-         function initMap() {
-             var sea = {lat: 19.049150, lng: -98.203503};
-             var map = new google.maps.Map(
-                 document.getElementById('map'), {zoom: 18, center: sea});
-             var marker = new google.maps.Marker({position: sea, map: map});
-             var contentString = '<h2 style="color: 333">Sistema Estatal Anticorrupción</h2><p>Calle 4 Poniente 719, C.P. 72090<br>Colonia, Centro Histórico</p>'
-             var infowindow = new google.maps.InfoWindow({
-                 content: contentString
-             });
-
-             marker.addListener('click', function() {
-                 infowindow.open(map, marker);
-             });
-         }
-        </script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM3giD__Sn1Wy_K672AtNJUtd3NosQ1aQ&callback=initMap">
-        </script>
-
+        <script src="/assets/js/medium-zoom.min.js"></script>
+       
         <script type="text/javascript">
          $(document).ready(function() {
-             $("#lightSlider").lightSlider({
-                 item:1,
-                 auto: true,
-                 loop:true,
-                 cssEasing: 'easeInQuint',
-                 slideMargin:0,
-                 speed: 600,
-                 pause: 4000,
-             });
+             mediumZoom(document.querySelectorAll('.infographic'), {
+                 margin:0,
+                 background: '#333',
+                 scrollOffset: 0,
+             })
+             
          });
+
         </script>
 	  </body>
 </html>

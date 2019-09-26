@@ -20,6 +20,10 @@
             font-weight: bold;
             font-size: 3.3em;
             color: rgba(255, 255, 255, 0.85);
+
+            @include breakpoint(small) {
+                font-size: 2em;
+            }
         }
 
         .slogan {
@@ -29,6 +33,10 @@
             margin-bottom: 2em;
             line-height: 1.2;
             color: rgba(255, 255, 255, 0.85);
+
+            @include breakpoint(small) {
+                margin-bottom: 0;
+            }
         }
 
         .main.action {
