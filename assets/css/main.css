@@ -2523,6 +2523,9 @@ table {
       font-weight: bold;
       font-size: 3.3em;
       color: rgba(255, 255, 255, 0.85); }
+      @media screen and (max-width: 736px) {
+        .hero .content .title {
+          font-size: 2em; } }
     .hero .content .slogan {
       font-size: 1.5em;
       font-weight: normal;
@@ -2530,6 +2533,9 @@ table {
       margin-bottom: 2em;
       line-height: 1.2;
       color: rgba(255, 255, 255, 0.85); }
+      @media screen and (max-width: 736px) {
+        .hero .content .slogan {
+          margin-bottom: 0; } }
     .hero .content .main.action {
       border-radius: 0;
       height: 50px;
@@ -2802,18 +2808,29 @@ table {
   width: 100%;
   color: #f10d71;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   background: #FAFAFA;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  z-index: 10; }
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid rgba(241, 13, 113, 0.9); }
   @media screen and (max-width: 736px) {
     .microsite nav {
       padding-top: 15px;
       padding-bottom: 15px;
       border-bottom: 2px solid rgba(241, 13, 113, 0.15); } }
+  .microsite nav a:hover {
+    color: #f10d71;
+    text-decoration: underline; }
+  .microsite nav .logo {
+    width: 230px;
+    height: 64px; }
+    @media screen and (max-width: 736px) {
+      .microsite nav .logo {
+        display: none; } }
 .microsite .flat-hero {
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -2825,7 +2842,7 @@ table {
     color: #f10d71;
     text-align: center; }
   .microsite .flat-hero .subtitle {
-    color: rgba(241, 13, 113, 0.8);
+    color: rgba(241, 13, 113, 0.9);
     text-align: center;
     font-size: 1.5em; }
     @media screen and (max-width: 736px) {
@@ -2834,7 +2851,7 @@ table {
   .microsite .flat-hero .figure {
     width: 30%;
     margin-bottom: 3em;
-    margin-top: 3em; }
+    margin-top: 1em; }
     @media screen and (max-width: 736px) {
       .microsite .flat-hero .figure {
         width: 70%;
@@ -2850,14 +2867,15 @@ table {
         margin-bottom: 2em;
         font-size: .8em; } }
 .microsite .segment .title {
-  width: 80%;
+  width: 100%;
   background-color: #454547;
-  padding: 0.4em 0.4em .4em 1em; }
+  padding: 0.4em 0.4em .4em 1em;
+  text-align: center; }
   .microsite .segment .title--right {
-    width: 80%;
+    width: 100%;
     background-color: #454547;
     padding: 0.4em 0.4em .4em 1em;
-    margin-left: 20%; }
+    text-align: center; }
     @media screen and (max-width: 736px) {
       .microsite .segment .title--right {
         width: 100%;
@@ -2873,5 +2891,39 @@ table {
   @media screen and (max-width: 736px) {
     .microsite .segment .infographic {
       width: 100%; } }
+.microsite .contact {
+  margin-bottom: 55px; }
+  .microsite .contact .title {
+    text-align: center;
+    padding: 0.4em 0.4em .4em 1em;
+    border-top: 2px solid #f10d71;
+    border-bottom: 2px solid #f10d71;
+    color: #FAFAFA;
+    background-color: #f10d71; }
+    @media screen and (max-width: 736px) {
+      .microsite .contact .title {
+        color: #FAFAFA;
+        background-color: #f10d71; } }
+  .microsite .contact .networks {
+    margin-top: 55px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; }
+    @media screen and (max-width: 736px) {
+      .microsite .contact .networks {
+        display: block; } }
+  .microsite .contact .social {
+    color: #454547;
+    font-size: 1.8em;
+    align-content: center;
+    display: inline-block; }
+    @media screen and (max-width: 736px) {
+      .microsite .contact .social {
+        display: block; } }
+    .microsite .contact .social span {
+      color: #f10d71; }
+    .microsite .contact .social a:hover {
+      text-decoration: underline;
+      color: #f10d71; }
 
 /*# sourceMappingURL=main.css.map */

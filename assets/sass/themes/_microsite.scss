@@ -1,9 +1,9 @@
 $theme: (
 		bg:					#FAFAFA	,
-		bg-alt:				rgba(28, 89, 155, 0.85),
+		bg-alt:		  #454547,
 		fg:					rgba(255,255,255,0.55),
 		fg-bold:		rgba(241, 13, 113, 1),
-		fg-light:			rgba(241, 13, 113, 0.8),
+		fg-light:			rgba(241, 13, 113, 0.9),
 		fg-dark:      	#333,
 		border:				rgba(241, 13, 113, 0.15),
 		border-bg:			rgba(255,255,255,0.05),
@@ -15,6 +15,7 @@ $theme: (
 		accent3-alt:		darken(#b74e91, 10)
 );
 
+
 .microsite {
     nav {
         position: fixed;
@@ -23,21 +24,37 @@ $theme: (
         width: 100%;
         color:  map-get($theme, 'fg-bold');
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         background: map-get($theme, 'bg');
-        padding-top: 25px;
-        padding-bottom: 25px;
-        z-index: 10;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 2px solid map-get($theme, 'fg-light');
 
         @include breakpoint(small) {
             padding-top: 15px;
             padding-bottom: 15px;
             border-bottom: 2px solid map-get($theme, 'border');
         }
+
+        a:hover {
+            color:  map-get($theme, 'fg-bold');
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 230px;
+            height: 64px;
+
+            @include breakpoint(small) {
+                display: none;
+            }
+        }
     }
 
     .flat-hero {
-        margin: 0 auto;
+        margin: 50px auto 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -65,7 +82,7 @@ $theme: (
     .figure {
         width: 30%;
         margin-bottom: 3em;
-        margin-top: 3em;
+        margin-top: 1em;
 
         @include breakpoint(small) {
             width: 70%;
@@ -91,15 +108,16 @@ $theme: (
 
 .segment {
     .title {
-            width: 80%;
+            width: 100%;
             background-color: #454547;
             padding: 0.4em 0.4em .4em 1em;
+            text-align: center;
             &--right {
-                width: 80%;
+                width: 100%;
                 background-color: #454547;
                 padding: 0.4em 0.4em .4em 1em;
-                margin-left: 20%;
-
+                // margin-left: 20%;
+                text-align: center;
                 @include breakpoint(small) {
                     width: 100%;
                     margin: 0;
@@ -122,4 +140,49 @@ $theme: (
         }
     }
 }
+
+.contact {
+    margin-bottom: 55px;
+
+        .title {
+            text-align: center;
+            padding: 0.4em 0.4em .4em 1em;
+            border-top: 2px solid map-get($theme, 'fg-bold');
+            border-bottom: 2px solid map-get($theme, 'fg-bold');
+            color:  #FAFAFA;
+            background-color: map-get($theme, 'fg-bold');
+            @include breakpoint(small) {
+            color:  #FAFAFA;
+            background-color: map-get($theme, 'fg-bold');
+            }
+        }
+
+        .networks {
+            margin-top: 55px;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            @include breakpoint(small) {
+                display: block;
+            }
+        }
+
+        .social {
+            color:  map-get($theme, 'bg-alt');
+            font-size: 1.8em;
+            align-content: center;
+            display: inline-block;
+
+            @include breakpoint(small) {
+                display: block;
+            }
+            span {
+                color: map-get($theme, 'fg-bold');
+            }
+            a:hover {
+                text-decoration: underline;
+                color: map-get($theme, 'fg-bold');
+            }
+        }
+    }
 }
