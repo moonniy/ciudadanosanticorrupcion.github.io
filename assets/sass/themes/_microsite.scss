@@ -130,6 +130,18 @@ $theme: (
             }
     }
 
+
+    .subtitle {
+        color:  map-get($theme, 'fg-light');
+        text-align: center;
+        font-size: 1.5em;
+
+        @include breakpoint(small) {
+            font-size: 1.2em;
+        }
+    }
+
+
     .infographic {
         width: 60%;
         margin-bottom: 3em;
@@ -184,5 +196,18 @@ $theme: (
                 color: map-get($theme, 'fg-bold');
             }
         }
+    }
+}
+
+
+.document {
+    background-color: #f10d71;
+    color: #FAFAFA !important;
+    margin-bottom: 2em;
+    font-size:0.7em;
+
+    @include breakpoint(small) {
+        margin-bottom: 1em;
+        font-size: .6em;
     }
 }
