@@ -2884,6 +2884,13 @@ table {
     .microsite .segment .title {
       width: 100%;
       padding: 0.4em 0.4em .4em 1em; } }
+.microsite .segment .subtitle {
+  color: rgba(241, 13, 113, 0.9);
+  text-align: center;
+  font-size: 1.5em; }
+  @media screen and (max-width: 736px) {
+    .microsite .segment .subtitle {
+      font-size: 1.2em; } }
 .microsite .segment .infographic {
   width: 60%;
   margin-bottom: 3em;
@@ -2925,5 +2932,15 @@ table {
     .microsite .contact .social a:hover {
       text-decoration: underline;
       color: #f10d71; }
+
+.document {
+  background-color: #f10d71;
+  color: #FAFAFA !important;
+  margin-bottom: 2em;
+  font-size: 0.7em; }
+  @media screen and (max-width: 736px) {
+    .document {
+      margin-bottom: 1em;
+      font-size: .6em; } }
 
 /*# sourceMappingURL=main.css.map */
